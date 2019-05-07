@@ -1,0 +1,649 @@
+EESchema Schematic File Version 4
+LIBS:DART6UL_BREAKOUT-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 5 7
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text HLabel 900  1800 0    50   Input ~ 0
+E_CONN[0..7]
+Text HLabel 10100 5350 2    50   Output ~ 0
+E2[0..12]
+Entry Wire Line
+	1400 1800 1500 1700
+Entry Wire Line
+	1350 1800 1450 1700
+Entry Wire Line
+	1250 1800 1350 1700
+Entry Wire Line
+	1200 1800 1300 1700
+Entry Wire Line
+	1100 1800 1200 1700
+Entry Wire Line
+	1050 1800 1150 1700
+Entry Wire Line
+	950  1800 1050 1700
+Entry Wire Line
+	900  1800 1000 1700
+Wire Wire Line
+	1500 1550 1500 1700
+Wire Wire Line
+	1450 1450 1450 1700
+Wire Wire Line
+	1350 1350 1350 1700
+Wire Wire Line
+	1300 1700 1300 1250
+Wire Wire Line
+	1200 1150 1200 1700
+Wire Wire Line
+	1150 1700 1150 1050
+Wire Wire Line
+	1050 950  1050 1700
+Wire Wire Line
+	1000 1700 1000 850 
+Text Label 8900 5600 2    50   ~ 0
+ETH2_RDATA0
+Text Label 8900 5700 2    50   ~ 0
+ETH2_RDATA1
+Text Label 8900 5800 2    50   ~ 0
+ETH2_TDATA0
+Text Label 8900 5900 2    50   ~ 0
+ETH2_TDATA1
+Text Label 8900 6000 2    50   ~ 0
+ETH2_RX_EN
+Text Label 8900 6100 2    50   ~ 0
+ETH2_RX_ER
+Text Label 8900 6200 2    50   ~ 0
+ETH2_TX_EN
+Text Label 8900 6300 2    50   ~ 0
+ETH2_TX_CLK
+Entry Wire Line
+	9250 5350 9150 5450
+Entry Wire Line
+	9300 5350 9200 5450
+Entry Wire Line
+	9400 5350 9300 5450
+Entry Wire Line
+	9450 5350 9350 5450
+Entry Wire Line
+	9550 5350 9450 5450
+Entry Wire Line
+	9600 5350 9500 5450
+Entry Wire Line
+	9700 5350 9600 5450
+Entry Wire Line
+	9750 5350 9650 5450
+Text Label 10550 6300 0    50   ~ 0
+MDIO
+Wire Wire Line
+	5850 4800 5850 5050
+Text Label 5850 5050 1    50   ~ 0
+MDIO
+Wire Wire Line
+	5950 4800 5950 5050
+Text Label 5950 5050 1    50   ~ 0
+MDC
+Entry Wire Line
+	9800 5450 9900 5350
+Entry Wire Line
+	9750 5450 9850 5350
+Text Label 6350 5250 1    50   ~ 0
+ETH2_RDATA0
+Wire Wire Line
+	6350 4800 6350 5000
+Text Label 10550 6100 0    50   ~ 0
+ETH2_RST
+Text Label 5750 1750 3    50   ~ 0
+ETH2_RST
+Wire Wire Line
+	5750 2100 5750 1750
+Text Label 6250 5250 1    50   ~ 0
+ETH2_RDATA1
+Wire Wire Line
+	6250 5250 6250 4800
+Text Label 7550 3100 2    50   ~ 0
+ETH2_TDATA0
+Wire Wire Line
+	7550 3100 7050 3100
+Text Label 7550 3200 2    50   ~ 0
+ETH2_TX_EN
+Wire Wire Line
+	7050 3200 7550 3200
+NoConn ~ 5050 3800
+Text Label 7500 3700 2    50   ~ 0
+ETH2_RX_EN
+Wire Wire Line
+	7500 3700 7050 3700
+Text Label 7550 3500 2    50   ~ 0
+ETH2_RX_ER
+Wire Wire Line
+	7050 3500 7550 3500
+$Comp
+L Device:R R31
+U 1 1 5BDE31E4
+P 6600 5150
+F 0 "R31" H 6670 5196 50  0000 L CNN
+F 1 "10K" H 6670 5105 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 6530 5150 50  0001 C CNN
+F 3 "~" H 6600 5150 50  0001 C CNN
+F 4 "RC0201FR-0710KL" H 0   0   50  0001 C CNN "Manufacturer_Part_Number"
+	1    6600 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6600 5000 6350 5000
+Connection ~ 6350 5000
+Wire Wire Line
+	6350 5000 6350 5250
+$Comp
+L power:GND #PWR016
+U 1 1 5BDE3E08
+P 6600 5900
+F 0 "#PWR016" H 6600 5650 50  0001 C CNN
+F 1 "GND" H 6605 5727 50  0000 C CNN
+F 2 "" H 6600 5900 50  0001 C CNN
+F 3 "" H 6600 5900 50  0001 C CNN
+	1    6600 5900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7050 3400 7600 3400
+Wire Wire Line
+	7600 3400 7600 2100
+$Comp
+L Device:R R33
+U 1 1 5BDE58E0
+P 7600 1950
+F 0 "R33" H 7670 1996 50  0000 L CNN
+F 1 "1K" H 7670 1905 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 7530 1950 50  0001 C CNN
+F 3 "~" H 7600 1950 50  0001 C CNN
+F 4 "RC0201FR-071KL" H 0   0   50  0001 C CNN "Manufacturer_Part_Number"
+	1    7600 1950
+	1    0    0    -1  
+$EndComp
+Text GLabel 6900 1400 1    50   Input ~ 0
+3V3DC
+NoConn ~ 7050 3600
+$Comp
+L KSZ8051RNL:KSZ8051RNL IC1
+U 1 1 5BFC68E9
+P 5050 3100
+F 0 "IC1" H 6100 3050 50  0000 L CNN
+F 1 "KSZ8081RNBCA-TR" H 5900 3150 50  0000 L CNN
+F 2 "Package_DFN_QFN:QFN-32-1EP_5x5mm_P0.5mm_EP3.6x3.6mm" H 6900 3900 50  0001 L CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/00002310A.pdf" H 6900 3800 50  0001 L CNN
+F 4 "10BASE-T/100BASE-TX Automotive Physical Layer Transceiver, QFN-32" H 6900 3700 50  0001 L CNN "Description"
+F 5 "1" H 6900 3600 50  0001 L CNN "Height"
+F 6 "Microchip" H 6900 3500 50  0001 L CNN "Manufacturer_Name"
+F 7 "KSZ8081RNBCA-TR" H 6900 3400 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "3.00" H 6900 3200 50  0001 L CNN "RS Price/Stock"
+F 9 "KSZ8081RNBCA-TR" H 6900 3100 50  0001 L CNN "Arrow Part Number"
+	1    5050 3100
+	1    0    0    -1  
+$EndComp
+Text Label 5650 5300 1    50   ~ 0
+ETH2_TX_CLK
+Wire Wire Line
+	5650 4800 5650 5300
+$Comp
+L power:GND #PWR015
+U 1 1 5BDEDF67
+P 5450 2100
+F 0 "#PWR015" H 5450 1850 50  0001 C CNN
+F 1 "GND" H 5455 1927 50  0000 C CNN
+F 2 "" H 5450 2100 50  0001 C CNN
+F 3 "" H 5450 2100 50  0001 C CNN
+	1    5450 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 2100 5650 2000
+Wire Wire Line
+	5650 2000 5450 2000
+Wire Wire Line
+	5450 2000 5450 2100
+$Comp
+L Device:R R29
+U 1 1 5BDF0525
+P 5750 5650
+F 0 "R29" H 5820 5696 50  0000 L CNN
+F 1 "6.49K" H 5820 5605 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 5680 5650 50  0001 C CNN
+F 3 "~" H 5750 5650 50  0001 C CNN
+F 4 "RMCF0402FT6K49" H 0   0   50  0001 C CNN "Manufacturer_Part_Number"
+	1    5750 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C29
+U 1 1 5BDF05B2
+P 6000 5650
+F 0 "C29" H 6115 5696 50  0000 L CNN
+F 1 "1nF" H 6115 5605 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 6038 5500 50  0001 C CNN
+F 3 "~" H 6000 5650 50  0001 C CNN
+F 4 "	CL21B102KBANFNC" H 0   0   50  0001 C CNN "Manufacturer_Part_Number"
+F 5 "0.10" H 0   0   50  0001 C CNN "RS Price/Stock"
+	1    6000 5650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 4800 5750 5400
+Wire Wire Line
+	6000 5500 6000 5400
+Wire Wire Line
+	6000 5400 5750 5400
+Connection ~ 5750 5400
+Wire Wire Line
+	5750 5400 5750 5500
+Wire Wire Line
+	6000 5800 6000 5850
+Wire Wire Line
+	6600 5850 6600 5900
+Wire Wire Line
+	6000 5850 6600 5850
+Wire Wire Line
+	5750 5800 5750 5850
+Wire Wire Line
+	5750 5850 6000 5850
+Connection ~ 6000 5850
+Wire Wire Line
+	6600 5300 6600 5850
+Connection ~ 6600 5850
+NoConn ~ 6350 2100
+NoConn ~ 6250 2100
+NoConn ~ 7050 3300
+Wire Wire Line
+	6150 4800 6150 5400
+Wire Wire Line
+	6150 5400 7100 5400
+$Comp
+L Device:R R32
+U 1 1 5BE00973
+P 7100 5150
+F 0 "R32" H 7170 5196 50  0000 L CNN
+F 1 "10K" H 7170 5105 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 7030 5150 50  0001 C CNN
+F 3 "~" H 7100 5150 50  0001 C CNN
+F 4 "RC0201FR-0710KL" H 0   0   50  0001 C CNN "Manufacturer_Part_Number"
+	1    7100 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7100 5300 7100 5400
+Text GLabel 7100 4900 1    50   Input ~ 0
+3V3DC
+Wire Wire Line
+	7100 5000 7100 4900
+NoConn ~ 6050 4800
+NoConn ~ 6050 2100
+$Comp
+L Device:R R30
+U 1 1 5BE327B0
+P 6150 1800
+F 0 "R30" H 6220 1846 50  0000 L CNN
+F 1 "10K" H 6220 1755 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 6080 1800 50  0001 C CNN
+F 3 "~" H 6150 1800 50  0001 C CNN
+F 4 "RC0201FR-0710KL" H 0   0   50  0001 C CNN "Manufacturer_Part_Number"
+	1    6150 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 2100 6150 1950
+Wire Wire Line
+	6150 1650 6150 1500
+Wire Wire Line
+	6150 1500 6900 1500
+Wire Wire Line
+	6900 1400 6900 1500
+Wire Wire Line
+	6900 1500 7600 1500
+Connection ~ 6900 1500
+Wire Wire Line
+	7600 1500 7600 1800
+$Comp
+L Device:C C24
+U 1 1 5BE65D86
+P 2950 3400
+F 0 "C24" H 2700 3400 50  0000 L CNN
+F 1 "100nF" H 2700 3300 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 2988 3250 50  0001 C CNN
+F 3 "~" H 2950 3400 50  0001 C CNN
+F 4 "CL21F104ZBCNNNC" H 0   0   50  0001 C CNN "Manufacturer_Part_Number"
+F 5 "0.10" H 0   0   50  0001 C CNN "RS Price/Stock"
+	1    2950 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C25
+U 1 1 5BE65DE7
+P 3150 3400
+F 0 "C25" H 3300 3400 50  0000 L CNN
+F 1 "2.2uF" H 3200 3300 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 3188 3250 50  0001 C CNN
+F 3 "~" H 3150 3400 50  0001 C CNN
+F 4 "	CL31B225KOHNNWE" H 0   0   50  0001 C CNN "Manufacturer_Part_Number"
+F 5 "0.10" H 0   0   50  0001 C CNN "RS Price/Stock"
+	1    3150 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 3250 2950 3200
+Wire Wire Line
+	3150 3250 3150 3200
+Wire Wire Line
+	2950 3650 3150 3650
+Wire Wire Line
+	3150 3650 3150 3550
+Connection ~ 2950 3650
+Wire Wire Line
+	2950 3650 2950 3550
+Wire Wire Line
+	2950 3200 3150 3200
+Connection ~ 3150 3200
+$Comp
+L Device:C C26
+U 1 1 5BE7B16E
+P 3350 3750
+F 0 "C26" H 3100 3750 50  0000 L CNN
+F 1 "100nF" H 3100 3650 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 3388 3600 50  0001 C CNN
+F 3 "~" H 3350 3750 50  0001 C CNN
+F 4 "CL21F104ZBCNNNC" H 0   0   50  0001 C CNN "Manufacturer_Part_Number"
+F 5 "0.10" H 0   0   50  0001 C CNN "RS Price/Stock"
+	1    3350 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C27
+U 1 1 5BE7B175
+P 3550 3750
+F 0 "C27" H 3700 3750 50  0000 L CNN
+F 1 "2.2uF" H 3600 3650 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 3588 3600 50  0001 C CNN
+F 3 "~" H 3550 3750 50  0001 C CNN
+F 4 "CL31B225KOHNNWE" H 0   0   50  0001 C CNN "Manufacturer_Part_Number"
+F 5 "0.10" H 0   0   50  0001 C CNN "RS Price/Stock"
+	1    3550 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 4100 3350 4000
+Wire Wire Line
+	3350 4000 3550 4000
+Wire Wire Line
+	3550 4000 3550 3900
+Connection ~ 3350 4000
+Wire Wire Line
+	3350 4000 3350 3900
+Wire Wire Line
+	2950 3650 2950 4100
+Wire Wire Line
+	2950 4100 3350 4100
+$Comp
+L power:GND #PWR013
+U 1 1 5BE8EF1A
+P 2950 4450
+F 0 "#PWR013" H 2950 4200 50  0001 C CNN
+F 1 "GND" H 2955 4277 50  0000 C CNN
+F 2 "" H 2950 4450 50  0001 C CNN
+F 3 "" H 2950 4450 50  0001 C CNN
+	1    2950 4450
+	1    0    0    -1  
+$EndComp
+Connection ~ 2950 4100
+Wire Wire Line
+	3350 3300 3350 3600
+Wire Wire Line
+	3550 3600 3550 3300
+Connection ~ 3550 3300
+Wire Wire Line
+	3550 3300 3350 3300
+Text GLabel 7850 3650 1    50   Input ~ 0
+3V3DC
+$Comp
+L Device:Ferrite_Bead L3
+U 1 1 5BEA1574
+P 3850 3750
+F 0 "L3" H 3987 3796 50  0000 L CNN
+F 1 "122R 1.3A" H 3987 3705 50  0000 L CNN
+F 2 "Inductor_SMD:L_0805_2012Metric" V 3780 3750 50  0001 C CNN
+F 3 "~" H 3850 3750 50  0001 C CNN
+F 4 "BKP1005TS121-T" H 0   0   50  0001 C CNN "Manufacturer_Part_Number"
+F 5 "0.10" H 0   0   50  0001 C CNN "RS Price/Stock"
+	1    3850 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 3600 3850 3300
+Connection ~ 3850 3300
+Wire Wire Line
+	3850 3300 3550 3300
+$Comp
+L Device:C C28
+U 1 1 5BEA4B04
+P 3850 4150
+F 0 "C28" H 3600 4150 50  0000 L CNN
+F 1 "100nF" H 3600 4050 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 3888 4000 50  0001 C CNN
+F 3 "~" H 3850 4150 50  0001 C CNN
+F 4 "CL21F104ZBCNNNC" H 0   0   50  0001 C CNN "Manufacturer_Part_Number"
+F 5 "0.10" H 0   0   50  0001 C CNN "RS Price/Stock"
+	1    3850 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 4350 2950 4350
+Wire Wire Line
+	2950 4100 2950 4350
+Wire Wire Line
+	2950 4450 2950 4350
+Connection ~ 2950 4350
+Wire Wire Line
+	3850 3900 3850 3950
+Connection ~ 3850 3950
+Wire Wire Line
+	3850 3950 3850 4000
+Wire Wire Line
+	3850 4350 3850 4300
+Text Label 7300 3800 2    50   ~ 0
+PIN17
+Text Label 4150 3950 2    50   ~ 0
+PIN17
+Wire Wire Line
+	3850 3950 4150 3950
+Wire Wire Line
+	3850 3300 5050 3300
+Wire Wire Line
+	3150 3200 5050 3200
+Wire Wire Line
+	5050 3400 4700 3400
+Wire Wire Line
+	5050 3500 4700 3500
+Wire Wire Line
+	5050 3600 4700 3600
+Wire Wire Line
+	5050 3700 4700 3700
+Text Label 4700 3400 0    50   ~ 0
+RXDN
+Text Label 4700 3500 0    50   ~ 0
+RXDP
+Text Label 4700 3600 0    50   ~ 0
+TXDN
+Text Label 4700 3700 0    50   ~ 0
+TXDP
+Wire Wire Line
+	7850 3650 7850 3800
+Wire Wire Line
+	7050 3800 7850 3800
+$Comp
+L power:GND #PWR014
+U 1 1 5BF4FF6F
+P 4500 3450
+F 0 "#PWR014" H 4500 3200 50  0001 C CNN
+F 1 "GND" H 4505 3277 50  0000 C CNN
+F 2 "" H 4500 3450 50  0001 C CNN
+F 3 "" H 4500 3450 50  0001 C CNN
+	1    4500 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 3450 4500 3100
+Wire Wire Line
+	4500 3100 5050 3100
+Wire Wire Line
+	9150 5600 9150 5450
+Wire Wire Line
+	8900 5600 9150 5600
+Wire Wire Line
+	9200 5700 9200 5450
+Wire Wire Line
+	8900 5700 9200 5700
+Wire Wire Line
+	9300 5800 9300 5450
+Wire Wire Line
+	8900 5800 9300 5800
+Wire Wire Line
+	9350 5450 9350 5900
+Wire Wire Line
+	8900 5900 9350 5900
+Wire Wire Line
+	9450 6000 9450 5450
+Wire Wire Line
+	8900 6000 9450 6000
+Wire Wire Line
+	9500 5450 9500 6100
+Wire Wire Line
+	8900 6100 9500 6100
+Wire Wire Line
+	9600 6200 9600 5450
+Wire Wire Line
+	8900 6200 9600 6200
+Wire Wire Line
+	9650 5450 9650 6300
+Wire Wire Line
+	8900 6300 9650 6300
+Wire Wire Line
+	9750 6300 10550 6300
+Wire Wire Line
+	9800 6200 10550 6200
+Wire Wire Line
+	9800 5450 9800 6200
+Wire Wire Line
+	9750 5450 9750 6300
+Wire Wire Line
+	9900 6100 10550 6100
+Wire Wire Line
+	9900 6100 9900 5450
+Text Label 9150 5600 1    50   ~ 0
+E20
+Text Label 9200 5700 1    50   ~ 0
+E21
+Text Label 9300 5800 1    50   ~ 0
+E22
+Text Label 9350 5900 1    50   ~ 0
+E23
+Text Label 9450 6000 1    50   ~ 0
+E24
+Text Label 9500 6100 1    50   ~ 0
+E25
+Text Label 9600 6200 1    50   ~ 0
+E26
+Text Label 9650 6300 1    50   ~ 0
+E27
+Text Label 9800 6300 1    50   ~ 0
+E28
+Text Label 9850 6200 1    50   ~ 0
+E29
+Text Label 9900 6100 1    50   ~ 0
+E210
+Text Label 10550 6200 0    50   ~ 0
+MDC
+NoConn ~ 5850 2100
+NoConn ~ 5950 2100
+Entry Wire Line
+	9900 5450 10000 5350
+Text Notes 5850 1650 3    50   ~ 0
+LINKSPEED2
+Text Notes 5950 1750 3    50   ~ 0
+LINKLED2
+Text Label 1000 1700 1    50   ~ 0
+E_CONN0
+Text Label 1050 1700 1    50   ~ 0
+E_CONN1
+Text Label 1150 1700 1    50   ~ 0
+E_CONN2
+Text Label 1200 1700 1    50   ~ 0
+E_CONN3
+Text Label 1300 1700 1    50   ~ 0
+E_CONN4
+Text Label 1350 1700 1    50   ~ 0
+E_CONN5
+Text Label 1450 1700 1    50   ~ 0
+E_CONN6
+Text Label 1500 1700 1    50   ~ 0
+E_CONN7
+Wire Wire Line
+	1500 1550 1800 1550
+Wire Wire Line
+	1450 1450 1800 1450
+Wire Wire Line
+	1350 1350 1800 1350
+Wire Wire Line
+	1300 1250 1800 1250
+Wire Wire Line
+	1200 1150 1800 1150
+Wire Wire Line
+	1150 1050 1800 1050
+Wire Wire Line
+	1050 950  1800 950 
+Wire Wire Line
+	1000 850  1800 850 
+Text Notes 1800 950  2    50   ~ 0
+LAN1-
+Text Notes 1800 1050 2    50   ~ 0
+LAN2+
+Text Notes 1800 1150 2    50   ~ 0
+LAN3+
+Text Notes 1800 1250 2    50   ~ 0
+LAN3-
+Text Notes 1800 1350 2    50   ~ 0
+LAN2-
+Text Notes 1800 1450 2    50   ~ 0
+LAN4+
+NoConn ~ 1800 1250
+NoConn ~ 1800 1150
+Text Label 6450 1600 3    50   ~ 0
+ETH2_TDATA1
+Wire Wire Line
+	6450 2100 6450 1600
+Text Label 1800 1550 0    50   ~ 0
+RXDN
+Text Label 1800 1450 0    50   ~ 0
+RXDP
+Text Label 1800 950  0    50   ~ 0
+TXDN
+Text Label 1800 850  0    50   ~ 0
+TXDP
+Text Notes 1800 850  2    50   ~ 0
+LAN1+
+Text Notes 1800 1550 2    50   ~ 0
+LAN4-
+NoConn ~ 1800 1050
+NoConn ~ 1800 1350
+Wire Bus Line
+	900  1800 1450 1800
+Wire Bus Line
+	9250 5350 10100 5350
+$EndSCHEMATC

@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP KSZ8051RNL
+D 10BASE-T/100BASE-TX Automotive Physical Layer Transceiver, QFN-32
+K
+F http://ww1.microchip.com/downloads/en/DeviceDoc/00002310A.pdf
+$ENDCMP
+#
+#End Doc Library

@@ -1,0 +1,819 @@
+EESchema Schematic File Version 4
+LIBS:DART6UL_BREAKOUT-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 7
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L 5vStep:MP2307 U2
+U 1 1 5BDBCB5F
+P 5700 2100
+F 0 "U2" H 5611 2715 50  0000 C CNN
+F 1 "MP2307" H 5611 2624 50  0000 C CNN
+F 2 "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.35x2.35mm" H 5700 2050 50  0001 C CNN
+F 3 "" H 5700 2050 50  0001 C CNN
+F 4 "MP2307DN-LF" H 0   0   50  0001 C CNN "Manufacturer_Part_Number"
+F 5 "4.01" H 0   0   50  0001 C CNN "RS Price/Stock"
+	1    5700 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 1850 5250 1850
+$Comp
+L Device:R R2
+U 1 1 5BDBCB67
+P 5700 2400
+F 0 "R2" V 5493 2400 50  0000 C CNN
+F 1 "R100K" V 5584 2400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 5630 2400 50  0001 C CNN
+F 3 "~" H 5700 2400 50  0001 C CNN
+F 4 "RMCF0402JT100K" H 0   0   50  0001 C CNN "Manufacturer_Part_Number"
+	1    5700 2400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6050 1950 6150 1950
+Wire Wire Line
+	6150 1950 6150 2400
+Wire Wire Line
+	5550 2400 5250 2400
+Wire Wire Line
+	5250 2400 5250 1850
+$Comp
+L Device:CP1 C6
+U 1 1 5BDBCB78
+P 2300 1850
+F 0 "C6" H 2415 1896 50  0000 L CNN
+F 1 "47" H 2415 1805 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_5x5.3" H 2300 1850 50  0001 C CNN
+F 3 "" H 2300 1850 50  0001 C CNN
+F 4 "EEE-FT1V470AR" H 0   0   50  0001 C CNN "Manufacturer_Part_Number"
+F 5 "0.10" H 0   0   50  0001 C CNN "RS Price/Stock"
+	1    2300 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 2050 5300 2050
+Wire Wire Line
+	6150 2400 5850 2400
+$Comp
+L Device:C C12
+U 1 1 5BDBCB87
+P 6450 2100
+F 0 "C12" H 6565 2146 50  0000 L CNN
+F 1 "3.9nF" H 6565 2055 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 6488 1950 50  0001 C CNN
+F 3 "~" H 6450 2100 50  0001 C CNN
+F 4 "	CL21B392KBANNNC" H 0   0   50  0001 C CNN "Manufacturer_Part_Number"
+F 5 "0.10" H 0   0   50  0001 C CNN "RS Price/Stock"
+	1    6450 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 5BDBCB8E
+P 6450 2550
+F 0 "R4" H 6520 2596 50  0000 L CNN
+F 1 "6.8k" H 6520 2505 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 6380 2550 50  0001 C CNN
+F 3 "~" H 6450 2550 50  0001 C CNN
+F 4 "RC0805FR-076K8L" H 0   0   50  0001 C CNN "Manufacturer_Part_Number"
+	1    6450 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 5BDBCB95
+P 6350 2900
+F 0 "#PWR0103" H 6350 2650 50  0001 C CNN
+F 1 "GND" H 6355 2727 50  0000 C CNN
+F 2 "" H 6350 2900 50  0001 C CNN
+F 3 "" H 6350 2900 50  0001 C CNN
+	1    6350 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 1750 5250 1750
+Wire Wire Line
+	5250 1750 5250 1450
+Wire Wire Line
+	4950 1450 4950 1600
+Wire Wire Line
+	4950 1600 5200 1600
+Wire Wire Line
+	5200 1600 5200 1950
+Wire Wire Line
+	5200 1950 5350 1950
+$Comp
+L pspice:INDUCTOR L2
+U 1 1 5BDBCBA3
+P 5200 2800
+F 0 "L2" V 5246 2759 50  0000 R CNN
+F 1 "10uH-4A1" V 5155 2759 50  0000 R CNN
+F 2 "PoESpeak:Inductor_SMD" H 5200 2800 50  0001 C CNN
+F 3 "ASPI-0630LR-100M-T15" H 5200 2800 50  0001 C CNN
+F 4 "ASPI-0630LR-100M-T15" H 0   0   50  0001 C CNN "Manufacturer_Part_Number"
+F 5 "0.89" H 0   0   50  0001 C CNN "RS Price/Stock"
+	1    5200 2800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5200 2550 5200 1950
+Connection ~ 5200 1950
+Wire Wire Line
+	5200 3050 5200 3150
+$Comp
+L Device:R R8
+U 1 1 5BDBCBAD
+P 6900 1750
+F 0 "R8" V 6693 1750 50  0000 C CNN
+F 1 "44.2k 1%" V 6784 1750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 6830 1750 50  0001 C CNN
+F 3 "~" H 6900 1750 50  0001 C CNN
+F 4 "RMCF0402FT44K2" H 0   0   50  0001 C CNN "Manufacturer_Part_Number"
+	1    6900 1750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R6
+U 1 1 5BDBCBB4
+P 6700 2050
+F 0 "R6" H 6770 2096 50  0000 L CNN
+F 1 "10k 1%" H 6770 2005 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 6630 2050 50  0001 C CNN
+F 3 "~" H 6700 2050 50  0001 C CNN
+F 4 "RC0201FR-0710KL" H 0   0   50  0001 C CNN "Manufacturer_Part_Number"
+	1    6700 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C14
+U 1 1 5BDBCBBB
+P 7150 2050
+F 0 "C14" H 7265 2096 50  0000 L CNN
+F 1 "0.1uF" H 7265 2005 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 7188 1900 50  0001 C CNN
+F 3 "~" H 7150 2050 50  0001 C CNN
+F 4 "885012208058" H 0   0   50  0001 C CNN "Manufacturer_Part_Number"
+F 5 "0.10" H 0   0   50  0001 C CNN "RS Price/Stock"
+	1    7150 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8050 3150 8050 1750
+Wire Wire Line
+	6050 1750 6700 1750
+Wire Wire Line
+	6700 1900 6700 1750
+Wire Wire Line
+	6350 2800 6450 2800
+Wire Wire Line
+	6700 2800 6700 2200
+Connection ~ 6350 2800
+Wire Wire Line
+	7150 2200 7150 2800
+Wire Wire Line
+	7700 2200 7700 2800
+Wire Wire Line
+	7150 1900 7150 1750
+Wire Wire Line
+	7700 1900 7700 1750
+Connection ~ 6700 2800
+Wire Wire Line
+	6700 2800 7150 2800
+Wire Wire Line
+	7050 1750 7150 1750
+Connection ~ 7150 1750
+Wire Wire Line
+	6750 1750 6700 1750
+Connection ~ 6700 1750
+Wire Wire Line
+	6050 2050 6100 2050
+$Comp
+L Device:C C10
+U 1 1 5BDBCBD3
+P 6100 2600
+F 0 "C10" H 6215 2646 50  0000 L CNN
+F 1 ".1uF" H 6215 2555 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 6138 2450 50  0001 C CNN
+F 3 "~" H 6100 2600 50  0001 C CNN
+F 4 "CL21F104ZBCNNNC" H 0   0   50  0001 C CNN "Manufacturer_Part_Number"
+F 5 "0.10" H 0   0   50  0001 C CNN "RS Price/Stock"
+	1    6100 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 2750 6100 2800
+Wire Wire Line
+	6100 2800 6350 2800
+Wire Wire Line
+	6100 2450 6100 2050
+Wire Wire Line
+	6450 1950 6450 1850
+Wire Wire Line
+	6450 1850 6050 1850
+Wire Wire Line
+	6450 2250 6450 2400
+Wire Wire Line
+	6450 2700 6450 2800
+Connection ~ 6450 2800
+Wire Wire Line
+	6450 2800 6700 2800
+Wire Wire Line
+	5300 2050 5300 2150
+Wire Wire Line
+	5350 2150 5300 2150
+Connection ~ 5300 2150
+$Comp
+L Device:C C8
+U 1 1 5BDBCBE7
+P 5100 1450
+F 0 "C8" V 4848 1450 50  0000 C CNN
+F 1 "10nF" V 4939 1450 50  0000 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 5138 1300 50  0001 C CNN
+F 3 "~" H 5100 1450 50  0001 C CNN
+F 4 "885012208026" H 0   0   50  0001 C CNN "Manufacturer_Part_Number"
+F 5 "0.10" H 0   0   50  0001 C CNN "RS Price/Stock"
+	1    5100 1450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6350 2800 6350 2900
+Text HLabel 9100 1750 2    50   Output ~ 0
+5V_OUT
+Text HLabel 1200 1450 0    50   Input ~ 0
+12V_INPUT
+Wire Wire Line
+	5200 3150 8050 3150
+$Comp
+L Device:C C4
+U 1 1 5BDBCBF4
+P 1950 1850
+F 0 "C4" H 2065 1896 50  0000 L CNN
+F 1 "10uF" H 2065 1805 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 1988 1700 50  0001 C CNN
+F 3 "~" H 1950 1850 50  0001 C CNN
+F 4 "885012008019" H 0   0   50  0001 C CNN "Manufacturer_Part_Number"
+F 5 "0.10" H 0   0   50  0001 C CNN "RS Price/Stock"
+	1    1950 1850
+	1    0    0    -1  
+$EndComp
+Connection ~ 7150 2800
+Connection ~ 7700 1750
+Wire Wire Line
+	7700 1750 8050 1750
+Wire Wire Line
+	7150 1750 7400 1750
+Wire Wire Line
+	7150 2800 7400 2800
+$Comp
+L Device:C C16
+U 1 1 5BDBCC09
+P 7400 2050
+F 0 "C16" H 7515 2096 50  0000 L CNN
+F 1 "22uF" H 7515 2005 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 7438 1900 50  0001 C CNN
+F 3 "~" H 7400 2050 50  0001 C CNN
+F 4 "CL31A226MOHNNNE" H 0   0   50  0001 C CNN "Manufacturer_Part_Number"
+F 5 "0.10" H 0   0   50  0001 C CNN "RS Price/Stock"
+	1    7400 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7400 1900 7400 1750
+Connection ~ 7400 1750
+Wire Wire Line
+	7400 1750 7700 1750
+$Comp
+L Device:C C2
+U 1 1 5BDBCC13
+P 1650 1850
+F 0 "C2" H 1765 1896 50  0000 L CNN
+F 1 "0.1uF" H 1765 1805 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 1688 1700 50  0001 C CNN
+F 3 "~" H 1650 1850 50  0001 C CNN
+F 4 "885012208058" H 0   0   50  0001 C CNN "Manufacturer_Part_Number"
+F 5 "0.10" H 0   0   50  0001 C CNN "RS Price/Stock"
+	1    1650 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7400 2200 7400 2800
+Connection ~ 7400 2800
+Wire Wire Line
+	7400 2800 7700 2800
+Text Notes 5850 1300 0    118  ~ 24
+12V to 5V Regulate
+$Comp
+L 5vStep:MP2307 U1
+U 1 1 5BDBE263
+P 5650 5150
+F 0 "U1" H 5561 5765 50  0000 C CNN
+F 1 "MP2307" H 5561 5674 50  0000 C CNN
+F 2 "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.35x2.35mm" H 5650 5100 50  0001 C CNN
+F 3 "" H 5650 5100 50  0001 C CNN
+F 4 "MP2307DN-LF" H 0   0   50  0001 C CNN "Manufacturer_Part_Number"
+F 5 "4.01" H 0   0   50  0001 C CNN "RS Price/Stock"
+	1    5650 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 4900 5200 4900
+$Comp
+L Device:R R1
+U 1 1 5BDBE26B
+P 5650 5450
+F 0 "R1" V 5443 5450 50  0000 C CNN
+F 1 "R100K" V 5534 5450 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 5580 5450 50  0001 C CNN
+F 3 "~" H 5650 5450 50  0001 C CNN
+F 4 "RMCF0402JT100K" H 0   0   50  0001 C CNN "Manufacturer_Part_Number"
+	1    5650 5450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6000 5000 6100 5000
+Wire Wire Line
+	6100 5000 6100 5450
+Wire Wire Line
+	5500 5450 5200 5450
+Wire Wire Line
+	5200 5450 5200 4900
+Wire Wire Line
+	5300 5100 5250 5100
+Wire Wire Line
+	6100 5450 5800 5450
+$Comp
+L Device:C C11
+U 1 1 5BDBE28B
+P 6400 5150
+F 0 "C11" H 6515 5196 50  0000 L CNN
+F 1 "3.9nF" H 6515 5105 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 6438 5000 50  0001 C CNN
+F 3 "~" H 6400 5150 50  0001 C CNN
+F 4 "	CL21B392KBANNNC" H 0   0   50  0001 C CNN "Manufacturer_Part_Number"
+F 5 "0.10" H 0   0   50  0001 C CNN "RS Price/Stock"
+	1    6400 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5BDBE292
+P 6400 5600
+F 0 "R3" H 6470 5646 50  0000 L CNN
+F 1 "6.8k" H 6470 5555 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 6330 5600 50  0001 C CNN
+F 3 "~" H 6400 5600 50  0001 C CNN
+F 4 "RC0805FR-076K8L" H 0   0   50  0001 C CNN "Manufacturer_Part_Number"
+	1    6400 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0105
+U 1 1 5BDBE299
+P 6300 5950
+F 0 "#PWR0105" H 6300 5700 50  0001 C CNN
+F 1 "GND" H 6305 5777 50  0000 C CNN
+F 2 "" H 6300 5950 50  0001 C CNN
+F 3 "" H 6300 5950 50  0001 C CNN
+	1    6300 5950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 4800 5200 4800
+Wire Wire Line
+	5200 4800 5200 4500
+Wire Wire Line
+	4900 4500 4900 4650
+Wire Wire Line
+	4900 4650 5150 4650
+Wire Wire Line
+	5150 4650 5150 5000
+Wire Wire Line
+	5150 5000 5300 5000
+$Comp
+L pspice:INDUCTOR L1
+U 1 1 5BDBE2A7
+P 5150 5850
+F 0 "L1" V 5196 5809 50  0000 R CNN
+F 1 "10uH-4A1" V 5105 5809 50  0000 R CNN
+F 2 "PoESpeak:Inductor_SMD" H 5150 5850 50  0001 C CNN
+F 3 "ASPI-0630LR-100M-T15" H 5150 5850 50  0001 C CNN
+F 4 "ASPI-0630LR-100M-T15" H 0   0   50  0001 C CNN "Manufacturer_Part_Number"
+F 5 "0.89" H 0   0   50  0001 C CNN "RS Price/Stock"
+	1    5150 5850
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5150 5600 5150 5000
+Connection ~ 5150 5000
+Wire Wire Line
+	5150 6100 5150 6200
+$Comp
+L Device:R R7
+U 1 1 5BDBE2B1
+P 6850 4800
+F 0 "R7" V 6643 4800 50  0000 C CNN
+F 1 "26.1k 1%" V 6734 4800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 6780 4800 50  0001 C CNN
+F 3 "~" H 6850 4800 50  0001 C CNN
+F 4 "RMCF0603FT26K1" H 0   0   50  0001 C CNN "Manufacturer_Part_Number"
+	1    6850 4800
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 5BDBE2B8
+P 6650 5100
+F 0 "R5" H 6720 5146 50  0000 L CNN
+F 1 "10k 1%" H 6720 5055 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 6580 5100 50  0001 C CNN
+F 3 "~" H 6650 5100 50  0001 C CNN
+F 4 "RC0201FR-0710KL" H 0   0   50  0001 C CNN "Manufacturer_Part_Number"
+	1    6650 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C13
+U 1 1 5BDBE2BF
+P 7100 5100
+F 0 "C13" H 7215 5146 50  0000 L CNN
+F 1 "0.1uF" H 7215 5055 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 7138 4950 50  0001 C CNN
+F 3 "~" H 7100 5100 50  0001 C CNN
+F 4 "885012208058" H 0   0   50  0001 C CNN "Manufacturer_Part_Number"
+F 5 "0.10" H 0   0   50  0001 C CNN "RS Price/Stock"
+	1    7100 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8000 6200 8000 4800
+Wire Wire Line
+	6000 4800 6650 4800
+Wire Wire Line
+	6650 4950 6650 4800
+Wire Wire Line
+	6300 5850 6400 5850
+Wire Wire Line
+	6650 5850 6650 5250
+Connection ~ 6300 5850
+Wire Wire Line
+	7100 5250 7100 5850
+Wire Wire Line
+	7650 5250 7650 5850
+Wire Wire Line
+	7100 4950 7100 4800
+Wire Wire Line
+	7650 4950 7650 4800
+Connection ~ 6650 5850
+Wire Wire Line
+	6650 5850 7100 5850
+Wire Wire Line
+	7000 4800 7100 4800
+Connection ~ 7100 4800
+Wire Wire Line
+	6700 4800 6650 4800
+Connection ~ 6650 4800
+Wire Wire Line
+	6000 5100 6050 5100
+$Comp
+L Device:C C9
+U 1 1 5BDBE2D7
+P 6050 5650
+F 0 "C9" H 6165 5696 50  0000 L CNN
+F 1 ".1uF" H 6165 5605 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 6088 5500 50  0001 C CNN
+F 3 "~" H 6050 5650 50  0001 C CNN
+F 4 "CL21F104ZBCNNNC" H 0   0   50  0001 C CNN "Manufacturer_Part_Number"
+F 5 "0.10" H 0   0   50  0001 C CNN "RS Price/Stock"
+	1    6050 5650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 5800 6050 5850
+Wire Wire Line
+	6050 5850 6300 5850
+Wire Wire Line
+	6050 5500 6050 5100
+Wire Wire Line
+	6400 5000 6400 4900
+Wire Wire Line
+	6400 4900 6000 4900
+Wire Wire Line
+	6400 5300 6400 5450
+Wire Wire Line
+	6400 5750 6400 5850
+Connection ~ 6400 5850
+Wire Wire Line
+	6400 5850 6650 5850
+Wire Wire Line
+	5250 5100 5250 5200
+Wire Wire Line
+	5300 5200 5250 5200
+Connection ~ 5250 5200
+$Comp
+L Device:C C7
+U 1 1 5BDBE2EB
+P 5050 4500
+F 0 "C7" V 4798 4500 50  0000 C CNN
+F 1 "10nF" V 4889 4500 50  0000 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 5088 4350 50  0001 C CNN
+F 3 "~" H 5050 4500 50  0001 C CNN
+F 4 "885012208026" H 0   0   50  0001 C CNN "Manufacturer_Part_Number"
+F 5 "0.10" H 0   0   50  0001 C CNN "RS Price/Stock"
+	1    5050 4500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6300 5850 6300 5950
+Text HLabel 8950 4800 2    50   Output ~ 0
+3V3_OUT
+Connection ~ 7100 5850
+Connection ~ 7650 4800
+Wire Wire Line
+	7650 4800 8000 4800
+Wire Wire Line
+	7100 4800 7350 4800
+Wire Wire Line
+	7100 5850 7350 5850
+$Comp
+L Device:C C15
+U 1 1 5BDBE30D
+P 7350 5100
+F 0 "C15" H 7465 5146 50  0000 L CNN
+F 1 "22uF" H 7465 5055 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 7388 4950 50  0001 C CNN
+F 3 "~" H 7350 5100 50  0001 C CNN
+F 4 "CL31A226MOHNNNE" H 0   0   50  0001 C CNN "Manufacturer_Part_Number"
+F 5 "0.10" H 0   0   50  0001 C CNN "RS Price/Stock"
+	1    7350 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7350 4950 7350 4800
+Connection ~ 7350 4800
+Wire Wire Line
+	7350 4800 7650 4800
+Wire Wire Line
+	7350 5250 7350 5850
+Connection ~ 7350 5850
+Wire Wire Line
+	7350 5850 7650 5850
+Text Notes 5800 4350 0    118  ~ 24
+12V to 3V3 Regulate
+Text Notes 9450 3350 0    118  ~ 24
+1V8? LVO?
+$Comp
+L Device:D_Zener_Small 5.1v1
+U 1 1 5FB7501F
+P 8650 2100
+F 0 "5.1v1" V 8604 2168 50  0000 L CNN
+F 1 "D_Zener_Small" V 8695 2168 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" V 8650 2100 50  0001 C CNN
+F 3 "~" V 8650 2100 50  0001 C CNN
+F 4 "DNP" H 0   0   50  0001 C CNN "Manufacturer_Part_Number"
+	1    8650 2100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8650 2000 8650 1750
+Wire Wire Line
+	8650 2200 8650 3150
+$Comp
+L Device:Fuse F3
+U 1 1 5FBA99CB
+P 8400 1750
+F 0 "F3" H 8460 1796 50  0000 L CNN
+F 1 "Fuse" H 8460 1705 50  0000 L CNN
+F 2 "Fuse:Fuse_1206_3216Metric" V 8330 1750 50  0001 C CNN
+F 3 "~" H 8400 1750 50  0001 C CNN
+F 4 "C1S 3" H 0   0   50  0001 C CNN "Manufacturer_Part_Number"
+F 5 "1" H 0   0   50  0001 C CNN "RS Price/Stock"
+F 6 "" H 0   0   50  0001 C CNN "RS Part Number"
+	1    8400 1750
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8550 1750 8650 1750
+Wire Wire Line
+	8250 1750 8050 1750
+Connection ~ 8050 1750
+$Comp
+L Device:D_Zener_Small 3v3
+U 1 1 5FBBBC56
+P 8500 5150
+F 0 "3v3" V 8454 5218 50  0000 L CNN
+F 1 "D_Zener_Small" V 8545 5218 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" V 8500 5150 50  0001 C CNN
+F 3 "~" V 8500 5150 50  0001 C CNN
+F 4 "DNP" H 0   0   50  0001 C CNN "Manufacturer_Part_Number"
+	1    8500 5150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8500 5250 8500 6200
+$Comp
+L Device:Fuse F2
+U 1 1 5FBC5244
+P 8250 4800
+F 0 "F2" H 8310 4846 50  0000 L CNN
+F 1 "Fuse" H 8310 4755 50  0000 L CNN
+F 2 "Fuse:Fuse_1206_3216Metric" V 8180 4800 50  0001 C CNN
+F 3 "~" H 8250 4800 50  0001 C CNN
+F 4 "C1S 3" H 0   0   50  0001 C CNN "Manufacturer_Part_Number"
+F 5 "1" H 0   0   50  0001 C CNN "RS Price/Stock"
+F 6 "" H 0   0   50  0001 C CNN "RS Part Number"
+	1    8250 4800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8100 4800 8000 4800
+Connection ~ 8000 4800
+Wire Wire Line
+	8500 5050 8500 4800
+Wire Wire Line
+	8400 4800 8500 4800
+Wire Wire Line
+	5150 6200 8000 6200
+Connection ~ 8500 4800
+Wire Wire Line
+	8500 4800 8950 4800
+Wire Wire Line
+	8500 6200 8000 6200
+Connection ~ 8000 6200
+Connection ~ 8650 1750
+Wire Wire Line
+	8650 1750 9100 1750
+Wire Wire Line
+	8650 3150 8050 3150
+Connection ~ 8050 3150
+Wire Wire Line
+	1200 1450 1650 1450
+Wire Wire Line
+	2300 1450 2300 1700
+Wire Wire Line
+	1950 1450 1950 1700
+Connection ~ 1950 1450
+Wire Wire Line
+	1650 1450 1650 1700
+Connection ~ 1650 1450
+Wire Wire Line
+	1650 1450 1950 1450
+$Comp
+L power:GND #PWR012
+U 1 1 5FC300DE
+P 1950 2250
+F 0 "#PWR012" H 1950 2000 50  0001 C CNN
+F 1 "GND" H 1955 2077 50  0000 C CNN
+F 2 "" H 1950 2250 50  0001 C CNN
+F 3 "" H 1950 2250 50  0001 C CNN
+	1    1950 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 2250 1950 2150
+Wire Wire Line
+	1950 2150 1650 2150
+Wire Wire Line
+	1650 2150 1650 2000
+Connection ~ 1950 2150
+Wire Wire Line
+	1950 2150 1950 2000
+Wire Wire Line
+	2300 2150 2300 2000
+Wire Wire Line
+	5300 2550 5950 2550
+Wire Wire Line
+	5950 2550 5950 2800
+Wire Wire Line
+	5950 2800 6100 2800
+Wire Wire Line
+	5300 2150 5300 2550
+Connection ~ 6100 2800
+Wire Wire Line
+	5250 5650 5900 5650
+Wire Wire Line
+	5900 5650 5900 5850
+Wire Wire Line
+	5900 5850 6050 5850
+Wire Wire Line
+	5250 5200 5250 5650
+Connection ~ 6050 5850
+$Comp
+L Device:Fuse F1
+U 1 1 5FCA61C0
+P 2600 1450
+F 0 "F1" V 2403 1450 50  0000 C CNN
+F 1 "Fuse" V 2494 1450 50  0000 C CNN
+F 2 "Fuse:Fuse_1206_3216Metric" V 2530 1450 50  0001 C CNN
+F 3 "~" H 2600 1450 50  0001 C CNN
+F 4 "C1S 3" H 0   0   50  0001 C CNN "Manufacturer_Part_Number"
+F 5 "1" H 0   0   50  0001 C CNN "RS Price/Stock"
+F 6 "" H 0   0   50  0001 C CNN "RS Part Number"
+	1    2600 1450
+	0    1    1    0   
+$EndComp
+Connection ~ 2300 1450
+Wire Wire Line
+	1950 1450 2300 1450
+Wire Wire Line
+	1950 2150 2300 2150
+Text Label 3300 1450 2    50   ~ 0
+V_IN
+Text Label 4600 1850 0    50   ~ 0
+V_IN
+Text Label 4550 4900 0    50   ~ 0
+V_IN
+Wire Wire Line
+	5200 4900 4550 4900
+Connection ~ 5200 4900
+Wire Wire Line
+	5250 1850 4600 1850
+Connection ~ 5250 1850
+$Comp
+L Jumper:SolderJumper_2_Open JP?
+U 1 1 5C19AD89
+P 8400 1450
+AR Path="/5BDC3E3E/5C19AD89" Ref="JP?"  Part="1" 
+AR Path="/5C19AD89" Ref="JP?"  Part="1" 
+AR Path="/5BDBA52C/5C19AD89" Ref="JP5"  Part="1" 
+F 0 "JP5" H 8400 1655 50  0000 C CNN
+F 1 "SolderJumper_2_Open" H 8400 1564 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 8400 1450 50  0001 C CNN
+F 3 "~" H 8400 1450 50  0001 C CNN
+F 4 "N/A" H 0   0   50  0001 C CNN "Manufacturer_Part_Number"
+	1    8400 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8050 1450 8050 1750
+Wire Wire Line
+	8050 1450 8250 1450
+Wire Wire Line
+	8550 1450 8650 1450
+Wire Wire Line
+	8650 1450 8650 1750
+$Comp
+L Jumper:SolderJumper_2_Open JP?
+U 1 1 5C1AE0AD
+P 8250 4500
+AR Path="/5BDC3E3E/5C1AE0AD" Ref="JP?"  Part="1" 
+AR Path="/5C1AE0AD" Ref="JP?"  Part="1" 
+AR Path="/5BDBA52C/5C1AE0AD" Ref="JP4"  Part="1" 
+F 0 "JP4" H 8250 4705 50  0000 C CNN
+F 1 "SolderJumper_2_Open" H 8250 4614 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 8250 4500 50  0001 C CNN
+F 3 "~" H 8250 4500 50  0001 C CNN
+F 4 "N/A" H 0   0   50  0001 C CNN "Manufacturer_Part_Number"
+	1    8250 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8100 4500 8000 4500
+Wire Wire Line
+	8000 4500 8000 4800
+Wire Wire Line
+	8400 4500 8500 4500
+Wire Wire Line
+	8500 4500 8500 4800
+Wire Wire Line
+	2300 1450 2450 1450
+Wire Wire Line
+	2750 1450 3300 1450
+$Comp
+L Device:CP1 C17
+U 1 1 5BF77E2E
+P 7650 5100
+F 0 "C17" H 7765 5146 50  0000 L CNN
+F 1 "47" H 7765 5055 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_5x5.3" H 7650 5100 50  0001 C CNN
+F 3 "" H 7650 5100 50  0001 C CNN
+F 4 "EEE-FT1V470AR" H 0   0   50  0001 C CNN "Manufacturer_Part_Number"
+F 5 "0.10" H 0   0   50  0001 C CNN "RS Price/Stock"
+	1    7650 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1 C18
+U 1 1 5BF874E1
+P 7700 2050
+F 0 "C18" H 7815 2096 50  0000 L CNN
+F 1 "47" H 7815 2005 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_5x5.3" H 7700 2050 50  0001 C CNN
+F 3 "" H 7700 2050 50  0001 C CNN
+F 4 "EEE-FT1V470AR" H 0   0   50  0001 C CNN "Manufacturer_Part_Number"
+F 5 "0.10" H 0   0   50  0001 C CNN "RS Price/Stock"
+	1    7700 2050
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

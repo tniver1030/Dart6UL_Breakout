@@ -1,0 +1,193 @@
+EESchema Schematic File Version 4
+LIBS:DART6UL_BREAKOUT-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 7
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	6900 3550 7050 3550
+Wire Wire Line
+	7050 3550 7050 3650
+Connection ~ 7050 3650
+Wire Wire Line
+	7050 3650 6900 3650
+Wire Wire Line
+	7200 3750 6900 3750
+Wire Wire Line
+	7200 3950 7200 3750
+Wire Wire Line
+	7050 3850 7050 3650
+Connection ~ 7050 3850
+Wire Wire Line
+	6900 3850 7050 3850
+Wire Wire Line
+	7200 3950 6900 3950
+Connection ~ 7200 3950
+Wire Wire Line
+	7200 4250 7200 3950
+Wire Wire Line
+	7050 3850 7050 4050
+Wire Wire Line
+	7050 4050 7050 4150
+Connection ~ 7050 4050
+Wire Wire Line
+	6900 4050 7050 4050
+Text Notes 4850 3000 0    50   ~ 0
+SETUP FOR SD CARD (MAYBE ALLOW FOR ANYTHING TO BE PULLED HIGH OR LOW?)\n
+Wire Wire Line
+	7050 4150 6900 4150
+Connection ~ 7050 4150
+Wire Wire Line
+	7050 4250 7050 4150
+$Comp
+L Device:R R?
+U 1 1 5C184E4A
+P 6750 3550
+AR Path="/5BDC3E3E/5C184E4A" Ref="R?"  Part="1" 
+AR Path="/5BDC7F57/5C10556C/5C184E4A" Ref="R22"  Part="1" 
+F 0 "R22" H 6750 3400 50  0000 C CNN
+F 1 "10k" V 6750 3550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 6680 3550 50  0001 C CNN
+F 3 "~" H 6750 3550 50  0001 C CNN
+F 4 "RC0201FR-0710KL" H 0   0   50  0001 C CNN "Manufacturer_Part_Number"
+	1    6750 3550
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5C184E51
+P 6750 3650
+AR Path="/5BDC3E3E/5C184E51" Ref="R?"  Part="1" 
+AR Path="/5BDC7F57/5C10556C/5C184E51" Ref="R23"  Part="1" 
+F 0 "R23" H 6750 3500 50  0000 C CNN
+F 1 "10k" V 6750 3650 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 6680 3650 50  0001 C CNN
+F 3 "~" H 6750 3650 50  0001 C CNN
+F 4 "RC0201FR-0710KL" H 0   0   50  0001 C CNN "Manufacturer_Part_Number"
+	1    6750 3650
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5C184E58
+P 6750 3750
+AR Path="/5BDC3E3E/5C184E58" Ref="R?"  Part="1" 
+AR Path="/5BDC7F57/5C10556C/5C184E58" Ref="R24"  Part="1" 
+F 0 "R24" H 6750 3600 50  0000 C CNN
+F 1 "10k" V 6750 3750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 6680 3750 50  0001 C CNN
+F 3 "~" H 6750 3750 50  0001 C CNN
+F 4 "RC0201FR-0710KL" H 0   0   50  0001 C CNN "Manufacturer_Part_Number"
+	1    6750 3750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5C184E5F
+P 6750 3850
+AR Path="/5BDC3E3E/5C184E5F" Ref="R?"  Part="1" 
+AR Path="/5BDC7F57/5C10556C/5C184E5F" Ref="R25"  Part="1" 
+F 0 "R25" H 6750 3700 50  0000 C CNN
+F 1 "10k" V 6750 3850 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 6680 3850 50  0001 C CNN
+F 3 "~" H 6750 3850 50  0001 C CNN
+F 4 "RC0201FR-0710KL" H 0   0   50  0001 C CNN "Manufacturer_Part_Number"
+	1    6750 3850
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5C184E66
+P 6750 3950
+AR Path="/5BDC3E3E/5C184E66" Ref="R?"  Part="1" 
+AR Path="/5BDC7F57/5C10556C/5C184E66" Ref="R26"  Part="1" 
+F 0 "R26" H 6750 3800 50  0000 C CNN
+F 1 "10k" V 6750 3950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 6680 3950 50  0001 C CNN
+F 3 "~" H 6750 3950 50  0001 C CNN
+F 4 "RC0201FR-0710KL" H 0   0   50  0001 C CNN "Manufacturer_Part_Number"
+	1    6750 3950
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5C184E6D
+P 6750 4150
+AR Path="/5BDC3E3E/5C184E6D" Ref="R?"  Part="1" 
+AR Path="/5BDC7F57/5C10556C/5C184E6D" Ref="R28"  Part="1" 
+F 0 "R28" H 6750 4000 50  0000 C CNN
+F 1 "10k" V 6750 4150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 6680 4150 50  0001 C CNN
+F 3 "~" H 6750 4150 50  0001 C CNN
+F 4 "RC0201FR-0710KL" H 0   0   50  0001 C CNN "Manufacturer_Part_Number"
+	1    6750 4150
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5C184E7B
+P 6750 4050
+AR Path="/5BDC3E3E/5C184E7B" Ref="R?"  Part="1" 
+AR Path="/5BDC7F57/5C10556C/5C184E7B" Ref="R27"  Part="1" 
+F 0 "R27" H 6750 3900 50  0000 C CNN
+F 1 "10k" V 6750 4050 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 6680 4050 50  0001 C CNN
+F 3 "~" H 6750 4050 50  0001 C CNN
+F 4 "RC0201FR-0710KL" H 0   0   50  0001 C CNN "Manufacturer_Part_Number"
+	1    6750 4050
+	0    1    1    0   
+$EndComp
+Text GLabel 7050 4250 3    50   Input ~ 0
+3V3DC
+$Comp
+L power:GND #PWR?
+U 1 1 5C184E91
+P 7200 4250
+AR Path="/5BDC3E3E/5C184E91" Ref="#PWR?"  Part="1" 
+AR Path="/5BDC7F57/5C10556C/5C184E91" Ref="#PWR011"  Part="1" 
+F 0 "#PWR011" H 7200 4000 50  0001 C CNN
+F 1 "GND" H 7205 4077 50  0000 C CNN
+F 2 "" H 7200 4250 50  0001 C CNN
+F 3 "" H 7200 4250 50  0001 C CNN
+	1    7200 4250
+	1    0    0    -1  
+$EndComp
+Text HLabel 6200 4150 0    50   Input ~ 0
+BOOT1
+Text HLabel 6200 4050 0    50   Input ~ 0
+LCD_DATA13
+Text HLabel 6200 3950 0    50   Input ~ 0
+LCD_DATA11
+Text HLabel 6200 3850 0    50   Input ~ 0
+LCD_DATA9
+Text HLabel 6200 3750 0    50   Input ~ 0
+LCD_DATA7
+Text HLabel 6200 3650 0    50   Input ~ 0
+LCD_DATA6
+Text HLabel 6200 3550 0    50   Input ~ 0
+LCD_DATA5
+Wire Wire Line
+	6200 4150 6600 4150
+Wire Wire Line
+	6600 4050 6200 4050
+Wire Wire Line
+	6200 3950 6600 3950
+Wire Wire Line
+	6600 3850 6200 3850
+Wire Wire Line
+	6200 3750 6600 3750
+Wire Wire Line
+	6600 3650 6200 3650
+Wire Wire Line
+	6200 3550 6600 3550
+$EndSCHEMATC
